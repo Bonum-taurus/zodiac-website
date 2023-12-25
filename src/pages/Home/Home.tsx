@@ -1,7 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Home.scss';
 
 export const Home = () => {
+  const { pathname } = useLocation();
+
   return (
     <div className="home">
       <div className="home__top">
@@ -17,12 +20,12 @@ export const Home = () => {
         </p>
 
         <div className="home__buttons">
-          <Link 
-            to="#" 
+          <HashLink 
+            to={`${pathname}#about-us`} 
             className="home__button home__button--learn-more"
           >
             Learn more
-          </Link>
+          </HashLink>
 
           <Link 
             to="gallery" 
@@ -47,7 +50,7 @@ export const Home = () => {
         ></iframe>
       </div>
 
-      <div className="home__about-us about-us">
+      <div id="about-us" className="home__about-us about-us">
         <h2 className="about-us__title">
           About Us
         </h2>

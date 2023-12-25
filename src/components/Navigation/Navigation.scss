@@ -108,6 +108,10 @@
       display: none;
     }
 
+    &--home-open {
+      display: block;
+    }
+
     &:hover {
       transform: translateY(5%)
     }

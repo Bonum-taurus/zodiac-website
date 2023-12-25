@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navigation.scss';
 import classNames from 'classnames';
-
 
 export const Navigation = () => {
   const [hasScroll, setHasScroll] = useState<boolean>(false)
   const [clickMenu, setClickMenu] = useState<boolean>(false)
+  const { pathname } = useLocation();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -40,7 +40,9 @@ export const Navigation = () => {
 
         <div className="menu__right-block">
           <li className="menu__item">
-            <Link to="home" className="menu__link menu__link--home">
+            <Link to="/" className={classNames('menu__link menu__link--home', {
+              'menu__link--home-open': pathname !== '/',
+            })}>
               Home
             </Link>
           </li>
