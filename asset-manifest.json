@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zodiac-website/static/css/main.7821d629.css",
+    "main.css": "/zodiac-website/static/css/main.75f792c0.css",
     "main.js": "/zodiac-website/static/js/main.883eaa31.js",
     "static/media/homeTop-bg.jpg": "/zodiac-website/static/media/homeTop-bg.096e1fd9c8e7eb36237a.jpg",
     "static/media/aboutUs-bg.jpg": "/zodiac-website/static/media/aboutUs-bg.2ddc806d16dc82e93e46.jpg",
@@ -8,11 +8,11 @@
     "static/media/partners-logo7.png": "/zodiac-website/static/media/partners-logo7.6150c765c56ba39b43eb.png",
     "static/media/zodiaclogowhite.png": "/zodiac-website/static/media/zodiaclogowhite.85a96b6ace540e7959d8.png",
     "index.html": "/zodiac-website/index.html",
-    "main.7821d629.css.map": "/zodiac-website/static/css/main.7821d629.css.map",
+    "main.75f792c0.css.map": "/zodiac-website/static/css/main.75f792c0.css.map",
     "main.883eaa31.js.map": "/zodiac-website/static/js/main.883eaa31.js.map"
   },
   "entrypoints": [
-    "static/css/main.7821d629.css",
+    "static/css/main.75f792c0.css",
     "static/js/main.883eaa31.js"
   ]
 }
