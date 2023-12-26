@@ -8,11 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    min-width: 100vh;
     padding: 150px $padding-home;
 
     @media (max-width: 1024px) {
       padding: 150px 20px;
+      background-position: center;
     }
 
     @media (max-width: 768px) {
