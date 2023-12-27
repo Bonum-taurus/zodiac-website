@@ -1,0 +1,5 @@
+@mixin fontTopGallery {
+  background: linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.4));
+  color: transparent;
+  background-clip: text;
+}

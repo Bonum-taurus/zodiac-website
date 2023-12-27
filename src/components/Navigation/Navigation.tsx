@@ -30,9 +30,10 @@ export const Navigation = () => {
       <ul className="menu__list">
         <li className="menu__item">
           <Link 
-            to="/" 
+            to={pathname} 
             className="menu__link menu__link--zodiac"
             onClick={() => window.scrollTo(0, 0)}
+            style={pathname !== '/' ? {display: 'block'} : {fontWeight: '700'}}
           >
             Zodiac Engineering
           </Link>
@@ -40,27 +41,55 @@ export const Navigation = () => {
 
         <div className="menu__right-block">
           <li className="menu__item">
-            <Link to="/" className={classNames('menu__link menu__link--home', {
-              'menu__link--home-open': pathname !== '/',
-            })}>
+            <Link 
+              to="/" 
+              className={classNames('menu__link menu__link--home', {
+                'menu__link--home-open': pathname !== '/',
+              })}
+              onClick={() => {
+                setClickMenu(false)
+                window.scrollTo(0, 0);
+              }}
+            >
               Home
             </Link>
           </li>
 
           <li className="menu__item">
-            <Link to="gallery" className="menu__link">
+            <Link 
+              to="gallery" 
+              className="menu__link"
+              onClick={() => {
+                setClickMenu(false)
+                window.scrollTo(0, 0);
+              }}
+            >
               Gallery
             </Link>
           </li>
 
           <li className="menu__item">
-            <Link to="projects" className="menu__link">
+            <Link 
+              to="projects" 
+              className="menu__link"
+              onClick={() => {
+                setClickMenu(false)
+                window.scrollTo(0, 0);
+              }}
+            >
               Projects
             </Link>
           </li>
 
           <li className="menu__item">
-            <Link to="contacts" className="menu__link">
+            <Link 
+              to="contacts" 
+              className="menu__link"
+              onClick={() => {
+                setClickMenu(false)
+                window.scrollTo(0, 0);
+              }}
+            >
               Contacts
             </Link>
           </li>

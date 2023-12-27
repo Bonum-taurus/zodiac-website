@@ -1,9 +1,89 @@
-.gallery {
-  background-image: url(../../img/home/homeTop-bg.jpg);
-  background-size: cover;
-  height: 100vh;
-  overflow: auto;
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
-  line-height: 100vh;
-  padding-left: 30px;
+.gallery {
+  &__top {
+    padding: 230px 150px;
+
+    background-image: linear-gradient(to bottom,rgba(22,22,22,.5) 0,rgba(22,22,22,.8) 75%,#161616 100%), url(../../img/gallery/gallery-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+
+    @media (max-width: 768px){
+      padding: 230px 40px;;
+    }
+
+    @media (max-width: 550px){
+      padding: 230px 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 7.3rem;
+    text-transform: uppercase;
+    line-height: 6.5rem;
+    letter-spacing: .8rem;
+    font-weight: normal;
+
+    @include fontTopGallery;
+
+    @media (max-width: 1024px){
+      font-size: 5rem;
+    }
+
+    @media (max-width: 550px){
+      font-size: 3rem;
+      letter-spacing: .3rem;
+    }
+  }
+
+  &__subtitle {
+    max-width: 31rem;
+    font-size: 2rem;
+
+    @include fontTopGallery;
+
+    @media (max-width: 1024px){
+      font-size: 1.5rem;
+    }
+  }
+
+  &__content {
+    padding: 100px 20px;
+
+    background-color: #bdc3c7;
+    background-color: linear-gradient(linear,left top,left bottom,from(#d7d9db),to(#829bb6));
+
+    @media (max-width: 550px){
+      padding: 50px 20px;
+    }
+  }
+
+  &__content-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 4.5rem;
+    font-weight: normal;
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    @media (max-width: 768px){
+      font-size: 4rem;
+    }
+  }
+
+  &__content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }

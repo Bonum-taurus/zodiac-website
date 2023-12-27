@@ -1,12 +1,16 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import './App.scss';
 
 import { Navigation } from './components/Navigation';
 
 function App() {
+  const { search } = useLocation();
+
+  console.log(search)
+
   return (
     <>
-      <Navigation />
+      {search !== '?modal=slider' && <Navigation />}
       <main className="content">
         <Outlet />
       </main>
