@@ -31,7 +31,7 @@
     letter-spacing: .8rem;
     font-weight: normal;
 
-    @include fontTopGallery;
+    @include fontTopPage;
 
     @media (max-width: 1024px){
       font-size: 5rem;
@@ -47,7 +47,7 @@
     max-width: 31rem;
     font-size: 2rem;
 
-    @include fontTopGallery;
+    @include fontTopPage;
 
     @media (max-width: 1024px){
       font-size: 1.5rem;

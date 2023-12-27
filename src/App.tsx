@@ -6,8 +6,6 @@ import { Navigation } from './components/Navigation';
 function App() {
   const { search } = useLocation();
 
-  console.log(search)
-
   return (
     <>
       {search !== '?modal=slider' && <Navigation />}

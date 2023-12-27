@@ -96,16 +96,34 @@ export const Navigation = () => {
         </div>
 
         <div className="menu__burger burger">
-          <div className="burger__title">Menu</div>
+          <div 
+            className="burger__title"
+            style={{ color: pathname === '/projects' && 
+                     !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+          >
+            Menu
+          </div>
           <div 
             className={classNames('burger__icon', {
               'burger__icon--click': clickMenu,
             })} 
             onClick={() => setClickMenu(!clickMenu)}
           >
-            <span className="burger__line burger__line--top"></span>
-            <span className="burger__line burger__line--middle"></span>
-            <span className="burger__line burger__line--bottom"></span>
+            <span 
+              className="burger__line burger__line--top"
+              style={{ backgroundColor: pathname === '/projects' && 
+                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+            ></span>
+            <span 
+              className="burger__line burger__line--middle"
+              style={{ backgroundColor: pathname === '/projects' && 
+                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+            ></span>
+            <span 
+              className="burger__line burger__line--bottom"
+              style={{ backgroundColor: pathname === '/projects' && 
+                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+            ></span>
           </div>
         </div>
       </ul>
