@@ -1,18 +1,33 @@
 {
   "files": {
-    "main.css": "/zodiac-website/static/css/main.75f792c0.css",
-    "main.js": "/zodiac-website/static/js/main.883eaa31.js",
+    "main.css": "/zodiac-website/static/css/main.65defdbe.css",
+    "main.js": "/zodiac-website/static/js/main.b3d902ba.js",
+    "static/media/image13.jpg": "/zodiac-website/static/media/image13.3844e719080af0de50cc.jpg",
+    "static/media/image14.jpg": "/zodiac-website/static/media/image14.ee4f0da715c2089b5a2c.jpg",
     "static/media/homeTop-bg.jpg": "/zodiac-website/static/media/homeTop-bg.096e1fd9c8e7eb36237a.jpg",
+    "static/media/gallery-bg.jpg": "/zodiac-website/static/media/gallery-bg.0c6a7162f0ca54c73476.jpg",
     "static/media/aboutUs-bg.jpg": "/zodiac-website/static/media/aboutUs-bg.2ddc806d16dc82e93e46.jpg",
     "static/media/brouchur-bg.jpg": "/zodiac-website/static/media/brouchur-bg.c93dbb1366775f75a8fb.jpg",
+    "static/media/image4.jpg": "/zodiac-website/static/media/image4.8a9d948584d9a172f1ad.jpg",
+    "static/media/image9.jpg": "/zodiac-website/static/media/image9.8c49576e2df3311f38e0.jpg",
+    "static/media/image8.jpg": "/zodiac-website/static/media/image8.9585e17ead3cfa17ec2d.jpg",
+    "static/media/image2.jpg": "/zodiac-website/static/media/image2.e0dbd966296d163399e9.jpg",
+    "static/media/image5.jpg": "/zodiac-website/static/media/image5.7b7909d174df612d853e.jpg",
+    "static/media/image6.jpg": "/zodiac-website/static/media/image6.5df2712edab54ab35869.jpg",
+    "static/media/image12.jpg": "/zodiac-website/static/media/image12.23ce84bda1ea5df06f42.jpg",
+    "static/media/image1.jpg": "/zodiac-website/static/media/image1.951795ca31424cd51c23.jpg",
+    "static/media/image7.jpg": "/zodiac-website/static/media/image7.fabcfa0bf85a8a130598.jpg",
+    "static/media/image3.jpg": "/zodiac-website/static/media/image3.028aeade379a701a2184.jpg",
+    "static/media/image10.jpg": "/zodiac-website/static/media/image10.e7148aa0b542016fc8d3.jpg",
+    "static/media/image11.jpg": "/zodiac-website/static/media/image11.defc2dc0b69dba592b8f.jpg",
     "static/media/partners-logo7.png": "/zodiac-website/static/media/partners-logo7.6150c765c56ba39b43eb.png",
     "static/media/zodiaclogowhite.png": "/zodiac-website/static/media/zodiaclogowhite.85a96b6ace540e7959d8.png",
     "index.html": "/zodiac-website/index.html",
-    "main.75f792c0.css.map": "/zodiac-website/static/css/main.75f792c0.css.map",
-    "main.883eaa31.js.map": "/zodiac-website/static/js/main.883eaa31.js.map"
+    "main.65defdbe.css.map": "/zodiac-website/static/css/main.65defdbe.css.map",
+    "main.b3d902ba.js.map": "/zodiac-website/static/js/main.b3d902ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.75f792c0.css",
-    "static/js/main.883eaa31.js"
+    "static/css/main.65defdbe.css",
+    "static/js/main.b3d902ba.js"
   ]
 }
