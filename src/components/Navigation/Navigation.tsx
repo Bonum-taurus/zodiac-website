@@ -10,7 +10,7 @@ export const Navigation = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 50) {
         setHasScroll(true)
       }
 
@@ -98,8 +98,8 @@ export const Navigation = () => {
         <div className="menu__burger burger">
           <div 
             className="burger__title"
-            style={{ color: pathname === '/projects' && 
-                     !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+            style={{ color: (pathname === '/projects' || pathname === '/contacts') && 
+                     !clickMenu && !hasScroll ? '#f8f9fa' : '#0e0e0ee6' }}
           >
             Menu
           </div>
@@ -111,18 +111,18 @@ export const Navigation = () => {
           >
             <span 
               className="burger__line burger__line--top"
-              style={{ backgroundColor: pathname === '/projects' && 
-                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+              style={{ backgroundColor: (pathname === '/projects' || pathname === '/contacts') && 
+                       !clickMenu && !hasScroll ? '#f8f9fa' : '#0e0e0ee6' }}
             ></span>
             <span 
               className="burger__line burger__line--middle"
-              style={{ backgroundColor: pathname === '/projects' && 
-                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+              style={{ backgroundColor: (pathname === '/projects' || pathname === '/contacts') && 
+                       !clickMenu && !hasScroll ? '#f8f9fa' : '#0e0e0ee6' }}
             ></span>
             <span 
               className="burger__line burger__line--bottom"
-              style={{ backgroundColor: pathname === '/projects' && 
-                       !clickMenu ? '#f8f9fa' : '#0e0e0ee6' }}
+              style={{ backgroundColor: (pathname === '/projects' || pathname === '/contacts') && 
+                       !clickMenu && !hasScroll ? '#f8f9fa' : '#0e0e0ee6' }}
             ></span>
           </div>
         </div>

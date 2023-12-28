@@ -321,8 +321,8 @@
   padding: 80px;
 
   @media (max-width: 550px) {
-		padding: 30px 20px;
-	}
+    padding: 30px 20px;
+  }
 
   &__contacts {
     display: flex;
@@ -350,6 +350,10 @@
 
     &:hover {
       box-shadow: 0 3px 4px $main-color;
+    }
+
+    @media (max-width: 550px) {
+      width: 90%;
     }
   }
 

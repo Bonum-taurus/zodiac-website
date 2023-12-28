@@ -1,9 +1,63 @@
 .contacts {
-  background-image: url(../../img/home/homeTop-bg.jpg);
+  background-image: linear-gradient(to bottom,rgba(22,22,22,.5) 0,rgba(22,22,22,.3) 85%,#ced4da 100%),url(../../img/contacts/contacts-bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  overflow: auto;
 
-  line-height: 100vh;
-  padding-left: 30px;
+  padding: 150px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__letter {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/contacts/icon-letter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    @media (max-width: 550px) {
+      font-size: 1.8rem;
+      max-width: 280px;
+    }
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .04rem;
+
+    max-width: 750px;
+
+    margin-bottom: 50px;
+
+    @media (max-width: 550px) {
+      letter-spacing: normal;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
 }
