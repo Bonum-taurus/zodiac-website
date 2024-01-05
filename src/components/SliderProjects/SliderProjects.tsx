@@ -35,14 +35,14 @@ export const SliderProjects: React.FC<Props> = ({ pictures, fade }) => {
       navigation={true}
       pagination={{ clickable: true }}
       parallax={true}
-      className="swiper"
+      className="swiper-projects"
 
       onSwiper={(swiper: any) => setGetSwiper(swiper)}
     >
       {pictures.map((pictureLink, index) => (
-        <SwiperSlide key={index} className="swiper__slide">
+        <SwiperSlide key={index} className="swiper-projects__slide">
           <img 
-            className="swiper__image"
+            className="swiper-projects__image"
             src={pictureLink} 
             alt="slider item" 
           />

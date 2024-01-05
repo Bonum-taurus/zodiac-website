@@ -2,7 +2,7 @@
 
 .menu {
   position: fixed;
-  z-index: 2;
+  z-index: 12;
   top: 0;
   right: 0;
   left: 0;
@@ -43,11 +43,11 @@
 
   &--burger-open .menu__link { 
     color: $main-color;
-    line-height: 50px;
   }
 
   &--burger-open .menu__right-block {
     transform: translateX(0);
+    padding-bottom: 20px;
   }
 
   &__list {
@@ -99,6 +99,10 @@
     letter-spacing: .1rem;
 
     transition: transform 1s;
+
+    @media (max-width: 1024px) {
+      line-height: 50px;
+    }
 
     &--zodiac {
       display: none;
